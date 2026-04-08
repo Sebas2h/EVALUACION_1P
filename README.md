@@ -91,7 +91,11 @@ Este comando permite visualizar la dirección del repositorio remoto asociado al
 
 **📝 Respuesta:**
 
-<!-- Escribe aquí tu explicación y evidencia para la Pregunta 2 -->
+El archivo .gitignore permite indicar a Git qué archivos o carpetas no deben ser rastreados por el sistema de control de versiones.
+
+En este caso se configuró para ignorar todos los archivos con extensión .log, la carpeta temp/ y los archivos .md y .txt dentro de la carpeta doc/.
+
+Se realizaron pruebas creando archivos dentro y fuera de la carpeta doc/, comprobando mediante el comando git status que los archivos definidos en el .gitignore no eran rastreados por Git.
 
 ---
 
