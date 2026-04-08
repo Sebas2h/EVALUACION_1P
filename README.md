@@ -51,7 +51,7 @@ Un fork es una copia de un repositorio que se crea dentro de la cuenta personal 
 git pull
 Es un comando que se utiliza para actualizar el repositorio local con los cambios que existen en el repositorio remoto. Este comando descarga los cambios nuevos y los fusiona con la rama actual del repositorio local.
 
-Proceso realizado
+Proceso realizado/////////
 
 ¿Cómo se realizó el fork?
 El fork se realizó desde la plataforma GitHub utilizando el botón Fork, el cual permite crear una copia del repositorio original dentro de la cuenta del usuario para poder trabajar de manera independiente.
