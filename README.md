@@ -40,7 +40,35 @@
 
 **📝 Respuesta:**
 
-<!-- Escribe aquí tu respuesta a la Pregunta 1 -->
+Diferencia entre los comandos y conceptos
+
+git clone
+Es un comando de Git que permite copiar un repositorio remoto a un equipo local. Al utilizar este comando se descarga todo el historial del repositorio y sus archivos, permitiendo trabajar localmente en el proyecto.
+
+fork
+Un fork es una copia de un repositorio que se crea dentro de la cuenta personal de GitHub de un usuario. Se utiliza principalmente cuando se desea trabajar en una copia del proyecto sin modificar directamente el repositorio original, permitiendo posteriormente proponer cambios mediante pull requests.
+
+git pull
+Es un comando que se utiliza para actualizar el repositorio local con los cambios que existen en el repositorio remoto. Este comando descarga los cambios nuevos y los fusiona con la rama actual del repositorio local.
+
+Proceso realizado
+
+¿Cómo se realizó el fork?
+El fork se realizó desde la plataforma GitHub utilizando el botón Fork, el cual permite crear una copia del repositorio original dentro de la cuenta del usuario para poder trabajar de manera independiente.
+
+¿Cómo se realizó el clone del fork?
+Una vez creado el fork, se copió la URL del repositorio y se utilizó el comando git clone en Git Bash para descargar el repositorio en el equipo local.
+
+Ejemplo del comando utilizado:
+
+git clone URL_DEL_REPOSITORIO
+
+¿Cómo se verificó que se estaba trabajando sobre el fork y no sobre el repositorio original?
+Para verificar el repositorio remoto configurado se utilizó el comando:
+
+git remote -v
+
+Este comando permite visualizar la dirección del repositorio remoto asociado al repositorio local, confirmando que corresponde al repositorio del usuario.
 
 ---
 
