@@ -300,5 +300,31 @@ git push origin --tags
 - Si hace falta agregar alguna evidencia adicional, agregue un tag adicional que sea `Version Final`.
 
 **📝 Respuesta:**
+Proceso realizado
 
-<!-- Escribe aquí tu respuesta completa a la Pregunta 6 -->
+Primero se trabajó en la rama develop del fork del repositorio. En esta rama se realizó la limpieza de los archivos creados en preguntas anteriores, eliminando los archivos utilizados durante la práctica de conflictos para mantener el repositorio organizado.
+
+Después de realizar la limpieza, se registraron los cambios mediante un commit. Posteriormente se realizó un merge desde la rama develop hacia la rama main en el repositorio local, con el objetivo de integrar en la rama principal todos los cambios finales del desarrollo.
+
+Luego se enviaron los cambios de la rama main local hacia la rama develop del repositorio remoto del fork, asegurando que el repositorio remoto quedara actualizado. Además, se enviaron todos los tags generados durante la práctica para conservar evidencia de cada una de las preguntas desarrolladas.
+
+Finalmente, se creó un Pull Request desde la rama develop del fork hacia la rama main del repositorio original. En el título del pull request se colocó el nombre y apellidos del estudiante, y en la descripción se agregó el enlace correspondiente al repositorio de GitHub.
+
+Explicación del versionamiento semántico
+
+El versionamiento semántico es una convención utilizada para identificar de manera clara el tipo de cambios que se realizan en cada nueva versión de un software. Su objetivo principal es facilitar la comprensión de la evolución del proyecto y comunicar si los cambios realizados afectan o no la compatibilidad con versiones anteriores.
+
+Este sistema se representa generalmente con tres números en el formato:
+
+MAJOR.MINOR.PATCH
+MAJOR
+
+Se incrementa cuando se realizan cambios importantes o incompatibles con versiones anteriores. Este tipo de cambio suele indicar que una nueva versión rompe compatibilidad con implementaciones previas.
+
+MINOR
+
+Se incrementa cuando se agregan nuevas funcionalidades o mejoras al software, manteniendo compatibilidad con las versiones anteriores.
+
+PATCH
+
+Se incrementa cuando se corrigen errores, se realizan ajustes menores o pequeñas mejoras internas que no afectan la compatibilidad ni agregan nuevas funcionalidades significativas.
