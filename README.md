@@ -125,8 +125,33 @@ Se realizaron pruebas creando archivos dentro y fuera de la carpeta doc/, compro
 
 **📝 Respuesta:**
 
-<!-- Escribe aquí tu respuesta completa a la Pregunta 3 -->
+comandos//////////////////
+git checkout main
+git checkout -b develop
+git checkout -b feature/ingresar-encabezado
+git add README.md
+git commit -m "Agregar nombre al encabezado"
+git add README.md
+git commit -m "Completar datos personales en el encabezado"
+git checkout develop
+git merge feature/ingresar-encabezado
+git branch -d feature/ingresar-encabezado
+git add README.md
+git commit -m "Documentar proceso de Git Flow"
+proceso///////////////////
+Primero se preparó la estructura de trabajo siguiendo el modelo de Git Flow. Se verificó que la rama principal del repositorio fuera main y posteriormente se creó una rama llamada develop, la cual se utiliza para integrar el desarrollo de nuevas funcionalidades.
 
+Luego se creó una rama de tipo feature llamada feature/ingresar-encabezado, la cual se utilizó para trabajar en la funcionalidad solicitada sin afectar directamente a las ramas principales del proyecto.
+
+Dentro de esta rama se modificó el archivo README.md, completando el encabezado del documento con los datos personales del estudiante. Durante el desarrollo se realizaron commits para registrar los cambios realizados en el archivo.
+
+Una vez finalizado el desarrollo, se regresó a la rama develop y se realizó la fusión (merge) de la rama feature/ingresar-encabezado hacia develop, integrando así los cambios realizados. Finalmente, la rama feature fue eliminada para mantener el repositorio organizado.
+
+Reflexión sobre Git Flow//////////////////////////////////
+
+Git Flow es una estrategia de trabajo que permite organizar el desarrollo de un proyecto mediante el uso de diferentes tipos de ramas. Este modelo facilita separar el desarrollo de nuevas funcionalidades, las correcciones de errores y las versiones estables del proyecto.
+
+En proyectos colaborativos o de larga duración, Git Flow resulta especialmente útil porque permite que varios desarrolladores trabajen simultáneamente en distintas funcionalidades sin interferir entre sí. Además, mantiene un historial de cambios más claro y estructurado, lo que facilita la integración, el control de versiones y la estabilidad del proyecto.
 ---
 
 ## Pregunta 4 (2 puntos)
