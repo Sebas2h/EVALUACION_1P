@@ -180,7 +180,29 @@ En proyectos colaborativos o de larga duración, Git Flow resulta especialmente 
 
 **📝 Respuesta:**
 
-<!-- Escribe aquí tu respuesta completa a la Pregunta 4 -->
+¿Qué es un Pull Request y cuál es su función?
+
+Un Pull Request es una solicitud que se realiza en GitHub para proponer la integración de cambios realizados en una rama hacia otra rama del repositorio, generalmente hacia la rama principal. Su función es permitir que otros desarrolladores revisen los cambios antes de que estos se integren al proyecto, facilitando el trabajo colaborativo y el control de calidad del código.
+
+¿Por qué es importante revisar un Pull Request antes de fusionarlo con la rama principal?
+
+Revisar un Pull Request es importante porque permite verificar que los cambios realizados funcionen correctamente y no generen errores en el proyecto. Además, la revisión ayuda a mantener la calidad del código, detectar posibles problemas, mejorar la implementación de las funcionalidades y asegurar que se cumplan los estándares del proyecto antes de integrar los cambios en la rama principal.
+
+¿Qué tipo de observaciones o validaciones se suelen realizar durante la revisión de un Pull Request?
+
+Durante la revisión de un Pull Request se suelen realizar diferentes validaciones, como comprobar que el código cumple con los requisitos solicitados, revisar que la funcionalidad implementada sea correcta, analizar la calidad y organización del código, identificar posibles errores o conflictos con otras partes del proyecto y verificar que los cambios no afecten negativamente el funcionamiento general del sistema.
+
+Procedimiento realizado
+
+Primero se trabajó en la rama develop, donde se realizaron las modificaciones necesarias en el archivo README.md para responder las preguntas planteadas.
+
+Posteriormente se realizó un commit con los cambios realizados y se subieron al repositorio remoto utilizando el comando git push origin develop.
+
+Después se creó un Pull Request desde la rama develop hacia la rama main en GitHub con el nombre “Pregunta 4 - Sebastian Vaca”.
+
+Dentro del Pull Request se agregaron comentarios solicitando incluir la respuesta correspondiente a la pregunta 2 y posteriormente la respuesta de la pregunta 3, realizando los commits necesarios para completar la información solicitada.
+
+Finalmente se procedió a aprobar el Pull Request y se realizó el merge correspondiente hacia la rama main, integrando los cambios al repositorio principal.
 
 ---
 
