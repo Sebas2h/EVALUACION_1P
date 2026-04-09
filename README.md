@@ -4,7 +4,7 @@
 
 **Asignatura:** Manejo y Configuración de Software  
 **Nombre del Estudiante:** FREDDY SEBASTIAN VACA RAMOS 
-**Fecha:**  
+**Fecha:** 08/04/2026 
 
 ---
 
