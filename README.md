@@ -235,7 +235,47 @@ Finalmente se procedió a aprobar el Pull Request y se realizó el merge corresp
 
 **📝 Respuesta:**
 
-<!-- Escribe aquí tu respuesta completa a la Pregunta 5 -->
+Se crearon dos ramas llamadas ramaA y ramaB a partir de la rama develop. En la rama ramaA se creó el archivo archivoA.txt con el contenido “Contenido A”, mientras que en la rama ramaB se creó un archivo con el mismo nombre pero con el contenido “Contenido B”.
+
+Posteriormente se intentó fusionar la rama ramaB sobre ramaA. Debido a que ambas ramas contenían el mismo archivo con contenidos diferentes, Git detectó un conflicto de fusión en el archivo archivoA.txt.
+
+Para resolver el conflicto, se editó manualmente el archivo afectado, combinando ambos contenidos en un solo archivo. Luego se marcó como resuelto con git add y se realizó el commit correspondiente para completar la fusión.
+
+Después de resolver el conflicto, la rama ramaA fue fusionada hacia develop, integrando los cambios resueltos en la rama de desarrollo. Finalmente se creó un pull request desde develop hacia main y se eliminaron las ramas ramaA y ramaB tanto localmente como en el repositorio remoto.
+
+Un conflicto en Git ocurre cuando dos ramas modifican la misma parte de un archivo de manera distinta y Git no puede decidir automáticamente qué versión conservar. En este caso ocurrió porque en ambas ramas se creó el mismo archivo archivoA.txt con contenido diferente.
+
+cOMANDOS////////
+git checkout develop
+git pull origin develop
+git checkout -b ramaA
+echo Contenido A > archivoA.txt
+git add archivoA.txt
+git commit -m "Crear archivoA.txt en ramaA"
+
+git checkout develop
+git checkout -b ramaB
+echo Contenido B > archivoA.txt
+git add archivoA.txt
+git commit -m "Crear archivoA.txt en ramaB"
+
+git checkout ramaA
+git merge ramaB
+notepad archivoA.txt
+git add archivoA.txt
+git commit -m "Resolver conflicto entre ramaA y ramaB"
+
+git checkout develop
+git merge ramaA
+git push origin develop
+git push origin ramaA
+git push origin ramaB
+git branch -d ramaA
+git branch -d ramaB
+git push origin --delete ramaA
+git push origin --delete ramaB
+git tag "Pregunta 5"
+git push origin --tags
 
 ---
 
